@@ -1,0 +1,525 @@
+/* Global Variables */
+
+* {
+	/* New Box Model */
+	box-sizing: -webkit-content-box;
+	box-sizing: -moz-content-box;
+	box-sizing: content-box;
+	
+	/* Old Box Model 
+	box-sizing: -webkit-border-box;
+	box-sizing: -moz-border-box;
+	box-sizing: border-box;
+	*/
+	font-family: sans-serif;
+	margin: 0; 
+	padding: 0;
+	
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+/* End Global Variables */
+
+
+
+
+
+
+
+/* Hidden Menu */
+
+.hidden-menu {
+	display: none;
+}
+
+/* End of Hidden Menu */
+
+
+
+
+
+
+
+/* Fix WEIRD text Shadows */
+
+.navbar .nav > li > a {
+	text-shadow: none;
+	color: white;
+}
+
+.navbar .nav > li > a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/* End of Fixing Weird Text Shadows */
+
+
+
+/* Setting Width of Components */
+
+body { 
+	padding-top: 50px; 
+}
+
+.navbar {
+	max-width: 960px;
+	margin: auto;
+	color: white;
+}
+
+.container-fluid {
+	max-width: 960px;
+	margin: auto;
+}
+
+
+
+.wrapper-below-navbar {
+	max-width: 960px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Begin Top Navbar */
+
+.navbar {
+	font-family: sans-serif;
+	font-size: 16px;
+	height: 60px;
+	background: #026ca1;
+	text-align:center; 
+	vertical-align:middle;
+}
+
+.nav a {
+	color: white;
+}
+
+.nav h1 {
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px;
+}
+
+.nav img {
+	padding: 0;
+	margin: 0;
+}
+
+
+.nav .search-button {
+	background: #0176a9 url('../img/icons/search-icon.png') no-repeat left;
+	background-position: 3px 15px;  /* First value alters left-right, 2nd alters top-down */
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 90px;
+	height: 50px;
+	
+}
+
+.nav .ask-button {
+	background: #03648f url('../img/icons/ask-icon.png') no-repeat left;
+	background-position: 5px 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 90px;
+	height: 50px;
+}
+
+.nav .answer-button {
+	background: #025b83 url('../img/icons/ask-icon.png') no-repeat;
+	background-position: 5px 15px;
+	padding-top: 10px;
+	padding-left: 10px;
+	width: 90px;
+	height: 50px;
+}
+
+
+/* Sidebar Basic Selectors */
+
+.sidebar-nav {
+	background: #1c1c1c;
+	overflow: hidden;
+	width: 27%;
+	min-width: 220px;
+	float: left;
+	margin-right: 30px;  /*Spacing AFTER the Sidebar */
+}
+
+.sidebar-nav a {
+	color: white;			
+}
+
+.sidebar-nav a:hover {
+	color: #026ca1;
+	text-decoration: none;			
+}
+
+.sidebar-nav ul {
+	 list-style: none;
+	 margin-left: 0px;
+}
+ 
+.sidebar-nav li {
+	padding-left: 25px;
+	padding-top: 5px;
+	height: 30px;
+	background: #373737;
+	border-top: 3px solid black;
+}
+
+.sidebar-nav img{
+	padding-right: 8px;
+}
+
+ /* End Sidebar Basic Selector */
+ 
+ 
+/* Start Sidebar Specific Selector */
+
+
+/* Headers like Navigation, eServices, Community */
+.sidebar-nav ul .sidebar-header {
+ 	font-weight: bold;
+ 	padding-left: 25px;
+ 	height: 30px;
+ 	padding-top: 10px;
+	background: #2c2c2c;
+	color: white;
+}
+
+/* Similar to sidebar-header */
+ 
+.current-rewards-header {
+	font-weight: bold;
+ 	padding-left: 25px;
+ 	border-bottom: 3px solid black;
+ 	border-top: 3px solid black;
+ 	height: 25px;
+ 	padding-top: 5px;
+	background: #2c2c2c;
+	color: white;
+} 
+
+/* Sidebar - Profile Area */
+.sidebar-nav .profile-area {
+	border-top: 3px solid black;
+	height: 80px;
+	margin-top: 10px;
+	padding-top: 10px;
+	background: #373737;
+}
+
+.sidebar-nav .profile-area .avatar {
+	width: 65px;
+	height: 65px;
+	margin-left: 25px;
+	margin-right: 10px;  /* Spacing after Picture */
+	float: left;
+}
+
+.sidebar-nav .profile-area .name-rank-progressbar-area {
+	color: white;
+}
+
+.sidebar-nav .profile-area .name-rank-progressbar-area li {
+	color: white;
+	border: 0;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-nav .profile-area .name-rank-progressbar-area .progress {
+	width: 110px;
+	background-color: #20232a;
+	margin-top: 3px;
+	height: 15px;
+}
+
+/* End of Sidebar Profile Area*/
+
+
+/* Sidebar - Reward Area */
+
+.sidebar-nav .reward-area {
+	height: 80px;
+	padding-top: 10px;
+	background: #373737;
+}
+
+.sidebar-nav .reward-area .reward-image {
+	width: 65px;
+	height: 65px;
+	margin-left: 25px;
+	margin-right: 10px;  /* Spacing after Picture */
+	float: left;
+}
+
+.sidebar-nav .reward-area .reward-details {
+	color: white;
+}
+
+.sidebar-nav .reward-area .reward-details li {
+	color: white;
+	border: 0;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-nav .reward-area .reward-details .progress {
+	width: 110px;
+	background-color: #20232a;
+	margin-top: 3px;
+	height: 15px;
+}
+
+
+/* End of Sidebar - Reward Area */
+
+ .sidebar-nav .logout-button {
+	 background: #000;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Start of Main Content */
+
+.main-content-area {
+	margin-top: 30px;	
+	padding-left: 10px;
+	overflow: hidden;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+	border: 1px solid #d4d4d5;
+	margin-bottom: 5px;
+}
+
+.breadcrumb li a {
+	color: #555555;
+}
+
+.breadcrumb > .active {
+	font-weight: bold;
+	color: #026ca1;
+}
+
+/* End Breadcrumbs */
+
+
+
+.search-filters {
+	color: #555555;
+	font-size: 11px;
+	margin-top: 0px;
+	padding-left: 10px;
+	margin-bottom: 0px;
+}
+
+/* Main Content after Breadcrumbs & Search Filters */
+
+.main-content {
+
+	padding: 0;
+	margin: 0;
+	
+		/* Fix TOO long words or URL */
+	white-space: pre;           /* CSS 2.0 */
+	white-space: pre-wrap;      /* CSS 2.1 */
+	white-space: pre-line;      /* CSS 3.0 */
+	white-space: -pre-wrap;     /* Opera 4-6 */
+	white-space: -o-pre-wrap;   /* Opera 7 */
+	white-space: -moz-pre-wrap; /* Mozilla */
+	white-space: -hp-pre-wrap;  /* HP Printers */
+	word-wrap: break-word;      /* IE 5+ */
+}
+
+
+
+
+
+/* End of Main Content */
+
+
+
+
+
+/* Search Results */
+.search-results-area {
+	background: #f3f3f3;
+	position: relative;
+	overflow: hidden;
+}
+
+.search-results-area .avatar {
+	float: left;
+	top: 10px;
+	width: 13%;
+	min-width: 70px;
+	
+}
+
+.search-results-area .search-snippets-area {
+	float: left;
+	width: 60%;
+} 
+
+.search-results-area .search-snippets-area .result-user {
+	font-size: 10px;
+} 
+
+.search-results-area .search-thumbs {
+	width: 10%;
+	float: left;
+	background: #67bc29;
+}
+
+.search-results-area .search-answers {
+	width: 10%;
+	float: left;
+	background: #3c9b35;
+}
+
+/* End Search Results */
+
+
+
+/********* RESPONSIVE CSS ***********/
+
+/* Large desktop */
+@media (min-width: 1200px) { ... }
+ 
+ 
+ 
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 979px) { 
+	.navbar-fixed-top {
+		position: fixed;
+	}
+	
+	body { 
+		padding-top: 50px; 
+	}
+	
+	.container-fluid {
+		max-width: 960px;
+		padding-left: 0px; /*Prevent sidebar from shifting left/right */
+		padding-right: 0px;  /*Prevent sidebar from shifting left/right */
+		margin: auto;
+	}
+
+}
+ 
+ 
+ 
+ 
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+	
+	.navbar-fixed-top {
+		position: fixed;
+	}
+	
+	body { 
+		padding-top: 50px; 
+	}
+	
+	
+	.container-fluid {
+		max-width: 960px;
+		padding-left: 0px; /*Prevent sidebar from shifting left/right */
+		padding-right: 0px;  /*Prevent sidebar from shifting left/right */
+		margin: auto;
+	}
+
+}
+
+
+
+
+ 
+/* Landscape phones and down */
+@media (max-width: 480px) {
+	
+	.hidden-menu {
+		display: inline;
+	}
+	
+	.sidebar-nav {
+		display: none;
+	}
+	
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+		position: fixed;
+	}
+	
+	.nav {
+		font-size: 12px;
+	}
+		
+	.nav .search-button {
+		background: #0176a9 url('../img/phones/icons/search-icon-small.png') no-repeat left;
+		background-position: 3px 17px;  /* First value alters left-right, 2nd alters top-down */
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 55px;
+		height: 50px;
+		
+	}
+	
+	.nav .ask-button {
+		background: #03648f url('../img/phones/icons/ask-icon-small.png') no-repeat left;
+		background-position: 5px 17px;
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 40px;
+		height: 50px;
+	}
+	
+	.nav .answer-button {
+		background: #025b83 url('../img/phones/icons/ask-icon-small.png') no-repeat;
+		background-position: 5px 17px;
+		padding-top: 10px;
+		padding-left: 10px;
+		width: 70px;
+		height: 50px;
+	}
+}
+
+/* End of @media (max-width: 480px) */
