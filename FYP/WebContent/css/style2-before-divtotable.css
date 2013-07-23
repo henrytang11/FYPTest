@@ -1,0 +1,1301 @@
+/********************
+*  JAVIS STYLESHEET
+*  Built 1.0
+*********************/
+
+/*********************
+*  START OF GLOBAL **
+**********************/
+
+* {
+	/* New Box Model */
+	box-sizing: -webkit-content-box;
+	box-sizing: -moz-content-box;
+	box-sizing: content-box; 
+	
+	/* Old Box Model  
+	box-sizing: -webkit-border-box;
+	box-sizing: -moz-border-box;
+	box-sizing: border-box;
+	*/
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	margin: 0; 
+	padding: 0;	
+}
+
+h1 {
+	font-size: 30px;
+	color: #2e9720;
+}
+
+h2 {
+	color: #555555;
+	font-size: 24px;
+}
+
+h3 {
+	color: #555555;
+	font-size: 16px;
+}
+
+h4 {
+	color: #555555;
+	font-size: 14px;
+}
+
+a:hover {
+	text-decoration: none;
+}
+
+.powered-by-engine {
+	margin-top: 10px;
+	float: right;
+	font-size: 12px;
+	color: #555555;
+}
+
+/*********************
+*  END OF GLOBAL **
+**********************/
+
+
+/********************************
+*  START OF INITIAL VISIBILITY **
+********************************/
+.hidden-menu {
+	display: none;
+	margin-top: 7px;
+}
+
+/********************************
+* END OF INITIAL VISIBILITY **
+********************************/
+
+
+
+
+
+/****************
+* WEIRD FIXERS **
+*****************/
+
+.navbar .nav > li > a {
+	text-shadow: none;
+	color: white;
+}
+
+.navbar .nav > li > a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+/********************
+* END WEIRD FIXERS **
+**********************/
+
+
+
+
+
+
+
+
+
+/****************************************
+*  START - SETTING WIDTH OF COMPONENTS **
+*****************************************/
+
+body { 
+	padding-top: 50px; 
+}
+
+.navbar {
+	max-width: 960px;
+	margin: 0 auto;
+	color: white;
+}
+
+.container-fluid {
+	max-width: 960px;
+	margin: auto;
+}
+
+.wrapper-below-navbar {
+	max-width: 960px;
+}
+
+/****************************************
+*  END - SETTING WIDTH OF COMPONENTS **
+*****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/********************
+*  START TOP NAVBAR *
+*********************/
+
+.navbar {
+	font-family: sans-serif;
+	font-size: 16px;
+	height: 60px;
+	background: #026ca1;
+	text-align:center; 
+	vertical-align:middle;
+}
+
+.full-top-navbar {
+	width: 100%;
+}
+
+.left-top-navbar {
+	width: 40%;
+	float: left;
+	text-align: left;
+}
+
+.middle-top-navbar {
+	width: 20%;
+	min-width: 50px;
+	float: left;
+	text-align: center;
+}
+
+.right-top-navbar {
+	float: left;
+	width: 40%;
+}
+
+.right-top-navbar ul {
+	list-style: none;
+}
+
+
+
+.nav a {
+	color: white;
+}
+
+.nav h1 {
+	padding: 0;
+	margin: 0;
+	text-indent: -9999px;
+}
+
+.nav img {
+	padding: 0;
+	margin: 0;
+}
+
+.javis-logo {
+	background: #026ca1 url('../img/javis-logo.png') no-repeat left;
+	margin-left: 10px;
+	width: 65px;
+}
+
+.mobile-javis-logo {
+	background: #026ca1 url('../img/javis-logo.png') no-repeat center;
+	margin-left: 10px;
+	width: 65px;
+}
+
+
+.search-button {
+	background: #0176a9 url('../img/icons/search-icon.png') no-repeat left;
+	background-position: 5px 15px;  /* First value alters left-right, 2nd alters top-down */
+	padding-top: 10px;
+	padding-left: 15px;
+	width: 90px;
+	height: 50px;
+	
+}
+
+.ask-button {
+	background: #03648f url('../img/icons/ask-icon.png') no-repeat left;
+	background-position: 5px 15px;
+	padding-top: 10px;
+	padding-left: 2px;
+	width: 90px;
+	height: 50px;
+}
+
+.answer-button {
+	background: #025b83 url('../img/icons/answer-icon.png') no-repeat;
+	background-position: 5px 15px;
+	padding-top: 10px;
+	padding-left: 15px;
+	width: 90px;
+	height: 50px;
+}
+
+
+.compressed-buttons { /* For Mobile View */
+	background: #026ca1 url('../img/icons/search-icon.png') no-repeat;
+	background-position: 5px 15px;
+	padding-top: 10px;
+	padding-left: 15px;
+	height: 50px;
+}
+
+
+
+/* PLS PUT BACK SEARCH BUTTON CSS HERE */
+
+
+
+/********************
+*  END OF TOP NAVBAR *
+*********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/***********************************************************
+*  START BASIC Selectors: Mobile Sidebar & Desktop Sidebar*
+************************************************************/
+
+.desktop-sidebar  {
+	background: #1c1c1c;
+	overflow: hidden;
+	width: 25%;
+	min-width: 220px;
+	float: left;
+	margin-right: 15px;  /*Spacing AFTER the Sidebar */
+}
+
+/* FIX: Remove float & fixed width for Mobile Sidebar */
+.mobile-sidebar {
+	background: #1c1c1c;
+}
+
+.desktop-sidebar a, .mobile-sidebar a {
+	color: white;			
+}
+
+.desktop-sidebar a:hover, .mobile-sidebar a:hover {
+	color: #026ca1;
+	text-decoration: none;			
+}
+
+.desktop-sidebar ul, .mobile-sidebar ul {
+	 list-style: none;
+	 margin-left: 0px;
+}
+ 
+.desktop-sidebar li, .mobile-sidebar li {
+	padding-left: 25px;
+	padding-top: 5px;
+	height: 30px;
+	border-top: 3px solid black;
+	background: #373737;
+}
+
+.desktop-sidebar img, .mobile-sidebar img{
+	padding-right: 8px;
+}
+
+ 
+/***********************************************************
+*  END of BASIC Selectors: Mobile Sidebar & Desktop Sidebar*
+************************************************************/
+
+
+
+
+ 
+
+
+
+
+
+ 
+/************************************
+* Start Sidebar Specific Selector ***
+************************************/
+
+
+/* Headers like Navigation, eServices, Community */
+.desktop-sidebar .sidebar-header, .mobile-sidebar .sidebar-header {
+ 	font-weight: bold;
+ 	padding-left: 25px;
+ 	height: 30px;
+ 	padding-top: 10px;
+	background: #2c2c2c;
+	color: white;
+}
+
+/* Similar to sidebar-header but with extra border */
+.desktop-sidebar .sidebar-current-rewards-header, .mobile-sidebar .sidebar-current-rewards-header {
+	font-weight: bold;
+ 	padding-left: 25px;
+ 	border-bottom: 3px solid black; /* Extra */
+ 	border-top: 3px solid black; /* Extra */
+ 	height: 25px;
+ 	padding-top: 5px;
+	background: #2c2c2c;
+	color: white;
+} 
+
+/* Sidebar - Profile Area */
+.sidebar-profile-area {
+	border-top: 3px solid black;
+	height: 80px;
+	margin-top: 10px;
+	padding-top: 10px;
+	background: #373737;
+}
+
+.sidebar-profile-area .sidebar-avatar {
+	width: 65px;
+	height: 65px;
+	margin-left: 25px;
+	margin-right: 10px;  /* Spacing after Picture */
+	float: left;
+}
+
+.sidebar-profile-area .sidebar-name-rank-progressbar-area {
+	color: white;
+}
+
+.sidebar-profile-area .sidebar-name-rank-progressbar-area li {
+	color: white;
+	border: 0;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-profile-area .sidebar-name-rank-progressbar-area .progress {
+	width: 110px;
+	background-color: #20232a;
+	margin-top: 3px;
+	height: 15px;
+}
+
+/* End of Sidebar Profile Area*/
+
+
+/* Sidebar - Reward Area */
+
+.sidebar-reward-area {
+	height: 80px;
+	padding-top: 10px;
+	background: #373737;
+}
+
+.sidebar-reward-area .sidebar-reward-image {
+	width: 65px;
+	height: 65px;
+	margin-left: 25px;
+	margin-right: 10px;  /* Spacing after Picture */
+	float: left;
+}
+
+.sidebar-reward-area .sidebar-reward-details {
+	color: white;
+}
+
+.sidebar-reward-area .sidebar-reward-details li {
+	color: white;
+	border: 0;
+	height: 20px;
+	padding: 0;
+	margin: 0;
+}
+
+.sidebar-reward-area .sidebar-reward-details .progress {
+	width: 110px;
+	background-color: #20232a;
+	margin-top: 3px;
+	height: 15px;
+}
+
+
+/* End of Sidebar - Reward Area */
+
+.desktop-sidebar .sidebar-logout-button, .mobile-sidebar .sidebar-logout-button {
+	 background: #000;
+ }
+
+
+
+ 
+/************************************
+* END OF Sidebar Specific Selector ***
+************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/************************************
+* START OF MOBILE SLIDING SIDEBAR  **
+************************************/
+
+
+.mobile-sidebar.collapse {
+  float: left;
+  height: 100% !important;
+  width: auto; 
+}
+
+.mobile-sidebar.collapse.height {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition: height 0.35s ease;
+  -moz-transition: height 0.35s ease;
+  -o-transition: height 0.35s ease;
+  transition: height 0.35s ease; 
+}
+
+.mobile-sidebar.collapse.width {
+  position: relative;
+  width: 0;
+  overflow: hidden;
+  -webkit-transition: width 0.35s ease;
+  -moz-transition: width 0.35s ease;
+  -o-transition: width 0.35s ease;
+  transition: width 0.35s ease; 
+}
+
+.mobile-sidebar.collapse.in.width {
+  width: auto; 
+}
+
+.mobile-sidebar.collapse.in.height {
+  height: auto; 
+}
+
+.mobile-sidebar .collapse-inner {
+  position: relative;
+  width: 220px;
+  height: 100%; 
+}
+
+
+/************************************
+* END OF MOBILE SLIDING SIDEBAR  **
+************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+* START OF MAIN CONTENT  **
+***************************/
+
+
+/* Start of Main Content Area */
+
+.main-content-area {
+	margin-top: 30px;	
+	padding-left: 10px;
+	overflow: hidden;
+	padding-right: 8px;
+}
+
+/* Breadcrumbs */
+
+.breadcrumb {
+	border: 1px solid #d4d4d5;
+	margin-bottom: 5px;
+}
+
+.breadcrumb li a {
+	color: #555555;
+}
+
+.breadcrumb > .active {
+	font-weight: bold;
+	color: #026ca1;
+}
+
+/* End Breadcrumbs */
+
+
+
+.search-filters {
+	color: #555555;
+	font-size: 11px;
+	margin-top: 0px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+/* Main Content after Breadcrumbs & Search Filters */
+
+.main-content {
+
+	padding: 0;
+	margin: 0;
+	
+		/* Fix TOO long words or URL */
+	/* white-space: pre;           /* CSS 2.0 */
+	/* white-space: pre-wrap;      /* CSS 2.1 */
+	/* white-space: pre-line;      /* CSS 3.0 */
+	/* white-space: -pre-wrap;     /* Opera 4-6 */
+	/* white-space: -o-pre-wrap;   /* Opera 7 */
+	/* white-space: -moz-pre-wrap; /* Mozilla */
+	/* white-space: -hp-pre-wrap;  /* HP Printers */
+	/* word-wrap: break-word;      /* IE 5+ */
+}
+
+
+
+
+
+
+/**************************
+* END OF MAIN CONTENT  **
+***************************/
+
+
+
+
+
+
+
+
+
+
+
+
+/**************************
+* START OF RESULT BOXES  **
+***************************/
+
+/* Search Results */
+.results-area {
+	background: #f3f3f3;
+	position: relative;
+	overflow: hidden;
+	margin-top: 5px;
+	width: 100%;
+	margin-bottom: 5px;
+	min-height: 60px;
+	
+}
+
+.results-area .avatar {
+/*	float: left;*/
+	width: 10%;
+	min-width: 70px;
+	margin-left: 15px;
+	margin-top: 15px;
+}
+
+.results-area .snippets-area {
+	float: left;
+	padding: 10px;
+	width: 60%;
+} 
+
+.results-area .thumbs-answers-area {
+	width: 20%;
+}
+
+
+
+
+.results-area .snippets-area .result-user {
+	font-weight: bold;
+	color: #026ca1;
+} 
+
+.results-area .snippets-area h2 {
+	font-weight: bold;
+	color: #555555;
+	font-size: 16px;
+	line-height: 1em;
+} 
+
+.results-area .snippets-area h2 a {
+	color: #555555;
+} 
+
+
+.results-area .snippets-area .result-snippet {
+	color: #555555;
+	font-size: 13px;
+	line-height: 1.2em;
+} 
+
+.results-area .snippets-area .result-meta-details {
+	color: #555555;
+	margin-top: 10px;
+	font-size: 12px;
+	font-style: italic;
+} 
+
+
+
+
+
+
+
+
+
+.results-area .search-thumbs {
+	background: #67bc29; 
+	/*float: right; */
+	/*height: 120px;  /* Fixing Height */
+	/*height: 50%;*/
+	/*min-height: 60px;*/
+	height: 100px;
+
+	
+	text-align: center;
+	vertical-align: middle;
+	/* padding-top: 60px; */
+}
+
+.results-area .search-answers {
+	background: #3c9b35; 
+	height: 100px;
+	/* float: right; */
+	/*height: 120px;  /* Fixing Height */
+	text-align: center;
+	vertical-align: middle;
+	/* padding-top: 60px; */
+}
+
+
+.holder {
+   overflow: hidden;
+   clear:    both;
+}
+.holder .even-height {
+   float: left;
+   padding-bottom: 100000px;
+   margin-bottom:  -100000px;
+}
+
+
+.thumb-number, .answer-number {
+	font-size: 28px;
+}
+
+.search-answers a, .search-thumbs a {
+	color: white;
+}
+
+.thumb-text, .answer-text {
+	font-size: 13px;
+}
+
+
+
+
+
+
+
+/**************************
+* END OF RESULT BOXES  **
+***************************/
+
+
+
+
+
+
+
+
+
+ 
+/************************************
+* ASk-QUESTION.HTML PAGE STYLING *
+************************************/
+
+
+.standard-form {
+}
+
+.ask-question-form {
+
+}
+
+/* Setting Width */
+
+.ask-question-title {
+	width: 95%;
+}
+
+.ask-question-details {
+	width: 95%;
+}
+
+.ask-question-categorise {
+	width: 95%;
+}
+
+
+
+
+
+.ask-form-header {
+	font-size: 22px;
+	margin-top: 30px;
+	margin-bottom: 10px;
+	color: #2e9720;
+}
+
+
+.form-radio-group {
+	margin-top: 10px;
+}
+
+input[type="radio"] {
+}
+
+input[type=radio] + span{
+	color: #555555;
+	font-size: 12px;
+	font-weight: bold;
+	padding-left: 5px;  /* Distance from Bullet Point to Text */
+}
+
+.standard-form-actions {
+	margin-top: 30px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	float: right;
+}
+
+
+
+.ask-question-form .tabbable {
+	width: 95%;
+}
+
+
+.tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background: #f3f3f3;
+}
+
+.nav-tabs {
+	/*background: red;*/
+	/*color: blue;*/
+	/*padding-left: 30px;   /* Shift tabs away from left */
+	font-size: 14px;  /* Tab's Font size (e.g. Suggested/Browse) */
+	margin-bottom: 0;
+
+}
+
+.nav-tabs a {
+	color: #5d5d5d;
+	background: #d3d3d3;
+}
+
+
+.nav-tabs > .active > a, .nav-tabs > .active > a:hover, .nav-tabs > .active > a:focus {
+	background: #f3f3f3;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/************************************
+* END OF ASk-QUESTION.HTML PAGE STYLING *
+************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+/***************************************
+* START OF SEARCH/ASK/ANSWER Main page *
+****************************************/
+
+.javis-search-mainpage {
+	position: relative;
+	height: 650px; /* Unorotodox - Fixing Height for absolute/relative positioning */
+}
+
+.javis-core-functions-area {
+	position: absolute;
+	top: 150px;
+	left: 50px;
+}
+
+.javis-core-functions-area {
+	width: 90%;  /* Width of Tab Contents */
+}
+
+
+
+.javis-core-functions-area .tab-content {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 10px;
+    background: #f3f3f3;
+
+}
+
+.javis-core-functions-area .nav-tabs {
+	padding-left: 20px;   /* Shift tabs away from left */
+}
+
+.javis-core-functions-area .nav-tabs li{
+	width: 80px;
+	min-width: 80px;
+	text-align: center;
+}
+
+
+/* <input type="text" class="search-query"> */
+input[type="text"].search-query  {
+	width: 91%;  /* Size of Search Box */
+}
+
+
+.javis-core-functions-area .tab-content .tab-pane {
+    padding-top: 20px;  /* Distance from Navbar (e.g. Search/Ask/Answer) and Content of TabPane */
+    padding-left: 15px;
+}
+
+
+.category-area {
+	width: 90%;
+}
+
+.category-area ul {
+	list-style: none;
+}
+
+.category-area a {
+	color: #555555;
+	border-bottom: 1px solid;  /* Replacing Underline */
+}
+
+.category-column-1, .category-column-2, .category-column-3 {
+	float: left;
+	width: 25%;
+}
+
+
+
+
+
+
+
+/***************************************
+* END OF SEARCH/ASK/ANSWER Main page *
+****************************************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*******************
+* START OF FOOTER  *
+********************/
+
+
+/* FOOTER */
+footer {
+	font-size: 12px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+
+
+
+/*******************
+* END OF FOOTER  *
+********************/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/******************************
+* START OF RESPONSIVE CSS  *
+******************************/
+
+
+
+
+/******************************
+* RESPONSIVE: LARGE DESKTOP  *
+******************************/
+
+@media (min-width: 980px) { 
+    .navbar-fixed-top {
+		position: fixed;
+	}
+	.mobile-sidebar {
+        display: none;
+    }
+}
+ 
+ 
+
+/*******************************************************
+* RESPONSIVE: PORTRAIT TABLET TO LANDSCAPE & DESKTOP   *
+********************************************************/
+
+@media (min-width: 768px) and (max-width: 979px) { 
+	.navbar-fixed-top {
+		position: fixed;
+	}
+
+	.nav-collapse, .nav-collapse.collapse {
+		height: auto; /* Remove this if don't want sidebar for Tablet */
+	}
+	
+	body { 
+		padding-top: 50px; 
+	}
+	
+	.container-fluid {
+		max-width: 960px;
+		padding-left: 0px; /*Prevent sidebar from shifting left/right */
+		padding-right: 0px;  /*Prevent sidebar from shifting left/right */
+		margin: auto;
+	}
+
+    .mobile-sidebar {
+        display: none;
+    }
+
+
+}
+ 
+ 
+ 
+/*******************************************************
+* RESPONSIVE: LANDSCAPE PHONE TO PORTRAIT TABLET   *
+********************************************************/
+@media (max-width: 767px) {
+	.navbar-fixed-top {
+		position: fixed; /* Fixing Top Nav */
+	}
+	
+	body { 
+		padding-left: 0px;  /* Fix Alignment Bug */
+        padding-right: 0px; /* Fix Alignment Bug */
+		padding-top: 50px;  /* Push content from top nav */
+	}
+	
+	
+	.container-fluid {
+		max-width: 960px;
+		padding-left: 0px; /*Prevent sidebar from shifting left/right */
+		padding-right: 0px;  /*Prevent sidebar from shifting left/right */
+		margin: auto;
+	}
+	
+	.hidden-menu {
+		display: inline; /* Show Menu Icon */
+	}
+
+	.desktop-sidebar {
+		display: none;
+	}
+}
+
+
+
+
+ /*****************************************
+* RESPONSIVE: LANDSCAPE PHONES & DOWN   *
+******************************************/
+@media (max-width: 480px) {
+	
+	/* Remove padding to fix whitespaces for Sidebar on Mobile */
+    body {
+        padding-left: 0px; /* Fix Alignment Bug */
+        padding-right: 0px; /* Fix Alignment Bug */
+    }
+
+	.hidden-menu {
+		display: inline;  /* Show Menu Icon */
+	}
+	
+	.desktop-sidebar {
+		display: none;
+	}
+	
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+		position: fixed; /* Fix Navbar */
+	}
+	
+	.nav {
+		font-size: 12px; /* Account for Space */
+	}
+
+		
+	.nav .search-button {
+		display: none;
+	}
+	
+	.nav .ask-button {
+		display: none;
+	}
+	
+	.nav .answer-button {
+		display: none;
+	}
+
+
+	.nav .javis-logo {
+		background: #026ca1 url('../img/javis-logo.png') no-repeat;
+		margin-left: auto;
+		margin-right: auto;
+		vertical-align: middle;
+		width: 65px;
+	}
+
+	
+	.search-thumbs, .search-answers {
+		display: none;     /* Set Visibility of Thumbs Up & Answers */
+	}
+}
+
+
+
+
+
+
+/********************
+* END CSS
+*********************/
+
+
+
+    
